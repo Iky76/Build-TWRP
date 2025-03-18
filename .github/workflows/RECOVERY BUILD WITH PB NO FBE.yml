@@ -15,7 +15,7 @@ on:
       MANIFEST_BRANCH:
         description: 'MANIFEST_BRANCH (TWRP for PB_DEVICES)'
         required: true
-        default: 'android-10.1'
+        default: 'android-14'
         type: choice
         options:
           - 'twrp-6.0'
@@ -32,7 +32,7 @@ on:
       DEVICE_TREE_URL:
         description: 'DEVICE_TREE_URL'
         required: true
-        default: 'https://github.com/SUFandom/A12-Exynos-recovery-devtree'
+        default: 'https://github.com/VannTakashi/recovery_xiaomi_lake/tree/rebase-12.1'
       DEVICE_TREE_BRANCH:
         description: 'DEVICE_TREE_BRANCH'
         required: true
@@ -40,7 +40,7 @@ on:
       DEVICE_PATH:
         description: 'DEVICE_PATH'
         required: true
-        default: 'device/samsung/a12s'
+        default: 'device/xiaomi/lake'
       COMMON_TREE_URL:
         description: 'COMMON_TREE_URL (if no common tree, leave blank)'
         required: false
@@ -50,15 +50,15 @@ on:
       DEVICE_NAME:
         description: 'DEVICE_NAME'
         required: true
-        default: 'a12s'
+        default: 'lake'
       MAKEFILE_NAME:
         description: 'MAKEFILE_NAME'
         required: true
-        default: 'twrp_a12s'
+        default: 'twrp_lake'
       BUILD_TARGET:
         description: 'BUILD_TARGET'
         required: true
-        default: 'recovery'
+        default: 'vendorboot'
 
 jobs:
   build:
